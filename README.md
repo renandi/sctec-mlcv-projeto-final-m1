@@ -9,6 +9,7 @@ E Comm CustomerID - Unique customer ID.
 E Comm Churn - Churn flag (indicator of whether a customer has churned).
 
 E Comm Tenure - Duration of a customer's relationship with the organization.
+moda
 
 E Comm PreferredLoginDevice - The device that a customer most often uses to log in.
 
