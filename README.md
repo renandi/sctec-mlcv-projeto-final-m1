@@ -4,43 +4,146 @@ https://github.com/Leangonplu/Ecommerce_Customer_Churn_Analysis_and_Prediction
 
 ### Features
 
-E Comm CustomerID - Unique customer ID.
+CustomerID - Unique customer ID.
+Desprezar
 
-E Comm Churn - Churn flag (indicator of whether a customer has churned).
+Churn - Churn flag (indicator of whether a customer has churned).
+Target
 
-E Comm Tenure - Duration of a customer's relationship with the organization.
-moda
+Tenure - Duration of a customer's relationship with the organization.
 
-E Comm PreferredLoginDevice - The device that a customer most often uses to log in.
+PreferredLoginDevice - The device that a customer most often uses to log in.
 
-E Comm CityTier - The tier of the city in which the customer lives.
+CityTier - The tier of the city in which the customer lives.
 
-E Comm WarehouseToHome - The distance from the warehouse to the customer's home.
+WarehouseToHome - The distance from the warehouse to the customer's home.
 
-E Comm PreferredPaymentMode - The customer's preferred payment method.
+PreferredPaymentMode - The customer's preferred payment method.
 
-E Comm Gender - The gender of the customer.
+Gender - The gender of the customer.
 
-E Comm HourSpendOnApp - The number of hours the customer spends on the mobile application or website.
+HourSpendOnApp - The number of hours the customer spends on the mobile application or website.
 
-E Comm NumberOfDeviceRegistered - The total number of devices registered for a particular customer.
+NumberOfDeviceRegistered - The total number of devices registered for a particular customer.
 
-E Comm PreferedOrderCat - The category of items that a customer most often ordered last month.
+PreferedOrderCat - The category of items that a customer most often ordered last month.
 
-E Comm SatisfactionScore - The customer's satisfaction score for the service.
+SatisfactionScore - The customer's satisfaction score for the service.
 
-E Comm MaritalStatus - The marital status of the customer.
+MaritalStatus - The marital status of the customer.
 
-E Comm NumberOfAddress - The total number of addresses registered for a particular customer.
+NumberOfAddress - The total number of addresses registered for a particular customer.
 
-E Comm Complain - An indicator of whether the customer raised any complaints last month.
 
-E Comm OrderAmountHikeFromlastYear - The percentage increase in the order amount from last year.
+Complain - An indicator of whether the customer raised any complaints last month.
 
-E Comm CouponUsed - The total number of coupons used by a customer last month.
+OrderAmountHikeFromlastYear - The percentage increase in the order amount from last year.
 
-E Comm OrderCount - The total number of orders placed by a customer last month.
+CouponUsed - The total number of coupons used by a customer last month.
 
-E Comm DaySinceLastOrder - The number of days since the customer's last order.
+OrderCount - The total number of orders placed by a customer last month.
 
-E Comm CashbackAmount - The average cashback amount the customer received last month.
+DaySinceLastOrder - The number of days since the customer's last order.
+
+CashbackAmount - The average cashback amount the customer received last month.
+
+
+#### Colunas categóricas
+
+- CityTier
+- PreferedLoginDevice
+- PreferredPaymentMode
+- Gender
+- PreferedOrderCat
+- MaritalStatus
+- Complain
+
+
+#### Colunas numéricas
+
+- Tenure
+
+    - Missing = mediana
+
+    - Outlier = remover
+
+- WarehouseToHome
+
+    - Missing = Mediana
+
+    - Outliers = Remover (2)
+
+- HourSpendOnApp
+
+    - Missing = Mediana
+
+    - Outliers = Nada
+
+- NumberOfDeviceRegistered
+
+    - Missing = n tem
+
+    - Outliers = Nada
+
+- SatisfactionScore
+
+    - Tudo OK
+
+- NumberOfAddress
+
+    - Outliers = Percentil 95
+
+- OrderAmountHikeFromlastYear
+
+    - Missing = Mediana
+
+    - Outliers = Percentil 95
+
+- CouponUsed
+
+    - Missing = Mediana
+
+    - Outliers = Percentil 95
+
+- OrderCount
+
+    - Missing = Mediana
+
+    - Outliers = Percentil 95
+
+- DaySinceLastOrder
+
+    - Outliers = Percentil 95
+
+- CashbackAmount
+
+    - Missing = Mediana
+
+    - Outlier = Percentil 5 e 95
+
+
+
+
+PreferredLoginDevice - The device that a customer most often uses to log in.
+
+CityTier - The tier of the city in which the customer lives.
+
+PreferredPaymentMode - The customer's preferred payment method.
+
+Gender - The gender of the customer.
+
+PreferedOrderCat - The category of items that a customer most often ordered last month.
+
+SatisfactionScore - The customer's satisfaction score for the service.
+
+MaritalStatus - The marital status of the customer.
+
+NumberOfAddress - The total number of addresses registered for a particular customer.
+
+Complain - An indicator of whether the customer raised any complaints last month.
+
+CouponUsed - The total number of coupons used by a customer last month.
+
+OrderCount - The total number of orders placed by a customer last month.
+
+DaySinceLastOrder - The number of days since the customer's last order.
